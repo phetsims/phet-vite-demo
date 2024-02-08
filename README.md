@@ -39,7 +39,7 @@ The following will run a server on your local machine, and you can navigate to t
 npx vite serve
 ```
 
-It will print ont the URL to navigate to, e.g. http://localhost:5173/.
+It will print out the URL to navigate to, e.g. http://localhost:5173/.
 
 (4) Built it:
 
