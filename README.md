@@ -1,7 +1,7 @@
 phet-vite-demo
 ================
 
-Testing out using Vite with PhET code. Does NOT rely on the PhET transpiler, just needs the relevant directories checked out adjacent to this repo.
+Testing out using Vite with PhET code. Uses the phet-lib NPM package.
 
 ### Quick Start
 
