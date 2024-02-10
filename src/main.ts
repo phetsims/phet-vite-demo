@@ -1,22 +1,21 @@
-// Copyright 2024, University of Colorado Boulder
-
-/**
- * Demo application for using PhET libraries with Vite.
- *
- * Provides a stub that includes a full-screen display, pan/zoom, and per-frame steps.
- *
- * @author Jonathan Olson <jonathan.olson@colorado.edu>
- */
 
 import './main.css';
-import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from '../../scenery/js/imports.ts';
-import TextPushButton from '../../sun/js/buttons/TextPushButton.ts';
-import platform from '../../phet-core/js/platform.ts';
-import NumberProperty from '../../axon/js/NumberProperty.ts';
-import PatternStringProperty from '../../axon/js/PatternStringProperty.ts';
-import StringProperty from '../../axon/js/StringProperty.ts';
-import Property from '../../axon/js/Property.ts';
-import Bounds2 from '../../dot/js/Bounds2.ts';
+
+// NOTE: Can also use direct imports if you have the PhET repos checked out:
+// import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from '../../scenery/js/imports.ts';
+// import TextPushButton from '../../sun/js/buttons/TextPushButton.ts';
+// import platform from '../../phet-core/js/platform.ts';
+// import NumberProperty from '../../axon/js/NumberProperty.ts';
+// import PatternStringProperty from '../../axon/js/PatternStringProperty.ts';
+// import StringProperty from '../../axon/js/StringProperty.ts';
+// import Property from '../../axon/js/Property.ts';
+// import Bounds2 from '../../dot/js/Bounds2.ts';
+
+import { platform } from 'phet-lib/phet-core';
+import { Bounds2 } from 'phet-lib/dot';
+import { Property, NumberProperty, PatternStringProperty, StringProperty } from 'phet-lib/axon';
+import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from 'phet-lib/scenery';
+import { TextPushButton } from 'phet-lib/sun';
 
 const scene = new Node();
 
