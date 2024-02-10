@@ -5,23 +5,10 @@ Testing out using Vite with PhET code. Does NOT rely on the PhET transpiler, jus
 
 ### Quick Start
 
-(1) Clone the simulation and its dependencies:
+(1) Clone phet-vite-demo:
 
 ```sh
 git clone https://github.com/phetsims/phet-vite-demo.git
-
-git clone https://github.com/phetsims/axon.git
-git clone https://github.com/phetsims/chipper.git
-git clone https://github.com/phetsims/dot.git
-git clone https://github.com/phetsims/kite.git
-git clone https://github.com/phetsims/phet-core.git
-git clone https://github.com/phetsims/phetcommon.git
-git clone https://github.com/phetsims/scenery.git
-git clone https://github.com/phetsims/sherpa.git
-git clone https://github.com/phetsims/sun.git
-git clone https://github.com/phetsims/tambo.git
-git clone https://github.com/phetsims/tandem.git
-git clone https://github.com/phetsims/utterance-queue.git
 ```
 
 (2) Install dev dependencies:
