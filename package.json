@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "phet-lib": "~0.0.4"
+    "phet-lib": "file:../phet-lib"
   },
   "devDependencies": {
     "vite": "^5.1.0",

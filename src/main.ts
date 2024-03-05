@@ -12,10 +12,13 @@ import './main.css';
 // import Bounds2 from '../../dot/js/Bounds2.ts';
 
 import { platform } from 'phet-lib/phet-core';
-import { Bounds2 } from 'phet-lib/dot';
+import { Bounds2, Range } from 'phet-lib/dot';
 import { Property, NumberProperty, PatternStringProperty, StringProperty } from 'phet-lib/axon';
 import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from 'phet-lib/scenery';
-import { TextPushButton } from 'phet-lib/sun';
+import { TextPushButton, AccordionBox } from 'phet-lib/sun';
+import { ArrowNode, NumberControl, Drawer } from 'phet-lib/scenery-phet';
+import { Animation } from 'phet-lib/twixt';
+import { StringUtils } from 'phet-lib/phetcommon';
 
 // @ts-ignore
 window.assertions.enableAssert();
@@ -62,7 +65,11 @@ const mainBox = new VBox( {
     } ),
     new Text( new PatternStringProperty( buttonPressPatternString, { count: countProperty } ), {
       font: font
-    } )
+    } ),
+    new NumberControl( 'Count', countProperty, new Range( 0, 100 ), {} ),
+    new ArrowNode( 0, 0, 100, 0, {} ),
+    new AccordionBox( new Text( 'Accordion Box' ) ),
+    new Drawer( new Text( 'Accordion Box' ) )
   ]
 } );
 
@@ -106,3 +113,6 @@ display.updateOnRequestAnimationFrame( dt => {
 
   zoomListener.step( dt );
 } );
+
+console.log( Animation );
+console.log( StringUtils );
