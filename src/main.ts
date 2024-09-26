@@ -1,4 +1,4 @@
-
+// Copyright 2024, University of Colorado Boulder
 import './main.css';
 
 // NOTE: Can also use direct imports if you have the PhET repos checked out:
@@ -20,7 +20,10 @@ import { ArrowNode, NumberControl, Drawer } from 'phet-lib/scenery-phet';
 import { Animation } from 'phet-lib/twixt';
 import { StringUtils } from 'phet-lib/phetcommon';
 
-// @ts-ignore
+/**
+ * @author Jonathan Olson (PhET Interactive Simulations)
+ */
+// @ts-expect-error
 window.assertions.enableAssert();
 
 const scene = new Node();
@@ -30,7 +33,7 @@ const rootNode = new Node( {
   children: [ scene ]
 } );
 
-const buttonPressPatternString = new StringProperty( 'Button presses: {{count}}' );
+const buttonPressPatternStringProperty = new StringProperty( 'Button presses: {{count}}' );
 
 const font = new Font( {
   family: 'sans-serif',
@@ -63,7 +66,7 @@ const mainBox = new VBox( {
       font: font,
       listener: () => { countProperty.value++; }
     } ),
-    new Text( new PatternStringProperty( buttonPressPatternString, { count: countProperty } ), {
+    new Text( new PatternStringProperty( buttonPressPatternStringProperty, { count: countProperty } ), {
       font: font
     } ),
     new NumberControl( 'Count', countProperty, new Range( 0, 100 ), {} ),
@@ -99,7 +102,7 @@ const resize = () => {
   zoomListener.setPanBounds( layoutBounds );
 };
 
-const resizeListener = () => { resizePending = true; }
+const resizeListener = () => { resizePending = true; };
 $( window ).resize( resizeListener );
 window.addEventListener( 'resize', resizeListener );
 window.addEventListener( 'orientationchange', resizeListener );
