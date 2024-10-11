@@ -7,12 +7,10 @@
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
 
-// import globals from '../chipper/node_modules/globals/index.js';
-import rootEslintConfig, { browserGlobals } from '../chipper/eslint/root.eslint.config.mjs';
+import browserEslintConfig from '../chipper/eslint/browser.eslint.config.mjs';
 
 export default [
-  ...rootEslintConfig,
-  browserGlobals,
+  ...browserEslintConfig,
   {
     rules: {
       'no-bitwise': 'off'
