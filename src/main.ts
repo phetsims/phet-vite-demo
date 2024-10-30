@@ -1,30 +1,21 @@
 // Copyright 2024, University of Colorado Boulder
-import './main.css';
-
-// NOTE: Can also use direct imports if you have the PhET repos checked out:
-// import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from '../../scenery/js/imports.ts';
-// import TextPushButton from '../../sun/js/buttons/TextPushButton.ts';
-// import platform from '../../phet-core/js/platform.ts';
-// import NumberProperty from '../../axon/js/NumberProperty.ts';
-// import PatternStringProperty from '../../axon/js/PatternStringProperty.ts';
-// import StringProperty from '../../axon/js/StringProperty.ts';
-// import Property from '../../axon/js/Property.ts';
-// import Bounds2 from '../../dot/js/Bounds2.ts';
-
-import { platform } from 'phet-lib/phet-core';
-import { Bounds2, Range } from 'phet-lib/dot';
-import { Property, NumberProperty, PatternStringProperty, StringProperty } from 'phet-lib/axon';
-import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from 'phet-lib/scenery';
-import { TextPushButton, AccordionBox } from 'phet-lib/sun';
-import { ArrowNode, NumberControl, Drawer } from 'phet-lib/scenery-phet';
-import { Animation } from 'phet-lib/twixt';
-import { StringUtils } from 'phet-lib/phetcommon';
-
 /**
  * @author Jonathan Olson (PhET Interactive Simulations)
  */
-// @ts-expect-error
-window.assertions.enableAssert();
+
+import './main.css';
+
+import { platform } from 'scenery-stack-test/phet-core';
+import { Bounds2, Range } from 'scenery-stack-test/dot';
+import { Property, NumberProperty, PatternStringProperty, StringProperty } from 'scenery-stack-test/axon';
+import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from 'scenery-stack-test/scenery';
+import { TextPushButton, AccordionBox } from 'scenery-stack-test/sun';
+import { ArrowNode, NumberControl, Drawer } from 'scenery-stack-test/scenery-phet';
+import { Animation } from 'scenery-stack-test/twixt';
+import { StringUtils } from 'scenery-stack-test/phetcommon';
+import { enableAssert } from 'scenery-stack-test/assert';
+
+enableAssert();
 
 const scene = new Node();
 

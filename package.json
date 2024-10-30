@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "phet-lib": "~0.0.4"
+    "scenery-stack-test": "file://../scenery-stack-test"
   },
   "devDependencies": {
     "vite": "^5.1.0",
