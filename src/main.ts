@@ -1,5 +1,7 @@
 // Copyright 2024, University of Colorado Boulder
 import './main.css';
+import { NumberProperty, PatternStringProperty, Property, StringProperty } from 'phet-lib/axon';
+import { Bounds2, Range } from 'phet-lib/dot';
 
 // NOTE: Can also use direct imports if you have the PhET repos checked out:
 // import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from '../../scenery/js/imports.ts';
@@ -10,15 +12,12 @@ import './main.css';
 // import StringProperty from '../../axon/js/StringProperty.ts';
 // import Property from '../../axon/js/Property.ts';
 // import Bounds2 from '../../dot/js/Bounds2.ts';
-
 import { platform } from 'phet-lib/phet-core';
-import { Bounds2, Range } from 'phet-lib/dot';
-import { Property, NumberProperty, PatternStringProperty, StringProperty } from 'phet-lib/axon';
-import { Node, Display, Text, VBox, Font, AlignBox, AnimatedPanZoomListener } from 'phet-lib/scenery';
-import { TextPushButton, AccordionBox } from 'phet-lib/sun';
-import { ArrowNode, NumberControl, Drawer } from 'phet-lib/scenery-phet';
-import { Animation } from 'phet-lib/twixt';
 import { StringUtils } from 'phet-lib/phetcommon';
+import { AlignBox, AnimatedPanZoomListener, Display, Font, Node, Text, VBox } from 'phet-lib/scenery';
+import { ArrowNode, Drawer, NumberControl } from 'phet-lib/scenery-phet';
+import { AccordionBox, TextPushButton } from 'phet-lib/sun';
+import { Animation } from 'phet-lib/twixt';
 
 /**
  * @author Jonathan Olson (PhET Interactive Simulations)
